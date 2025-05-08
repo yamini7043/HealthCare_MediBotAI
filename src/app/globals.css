@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Using Poppins font, applied in layout.tsx */
+body {
+  font-family: var(--font-sans), sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Light Theme - Clean Healthcare Feel (Using primarily the dark theme colors as requested for consistency) */
+    --background: 220 20% 9% ; /* Very Dark Blue */
+    --foreground: 210 40% 96%; /* Light Gray */
+    --card: 220 20% 13%; /* Darker Blue-Gray */
+    --card-foreground: 210 40% 96%; /* Light Gray */
+    --popover: 220 20% 11%; /* Slightly Darker Popover */
+    --popover-foreground: 210 40% 96%; /* Light Gray */
+    --primary: 200 85% 55%; /* Bright Cerulean Blue */
+    --primary-foreground: 200 85% 10%; /* Dark Cerulean */
+    --secondary: 210 15% 25%; /* Medium Dark Gray-Blue */
+    --secondary-foreground: 210 40% 90%; /* Lighter Gray */
+    --muted: 210 15% 25%; /* Medium Dark Gray-Blue */
+    --muted-foreground: 210 20% 60%; /* Medium Gray */
+    --accent: 170 70% 45%; /* Teal/Turquoise */
+    --accent-foreground: 170 70% 95%; /* Very Light Teal */
+    --destructive: 0 70% 50%; /* Standard Red */
+    --destructive-foreground: 0 0% 98%; /* Light */
+    --border: 210 15% 30%; /* Dark Gray-Blue Border */
+    --input: 210 15% 20%; /* Darker Input Background */
+    --ring: 200 85% 50%; /* Slightly darker Cerulean for focus rings */
+    --chart-1: 200 70% 50%;
+    --chart-2: 170 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.5rem;
+    /* Sidebar uses same theme */
+    --sidebar-background: 220 20% 9%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 200 85% 55%;
+    --sidebar-primary-foreground: 200 85% 10%;
+    --sidebar-accent: 210 15% 25%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 210 15% 30%;
+    --sidebar-ring: 200 85% 50%;
+  }
+  .dark {
+     /* Dark Theme - Clean Healthcare Feel */
+    --background: 220 20% 9%; /* Very Dark Blue */
+    --foreground: 210 40% 96%; /* Light Gray */
+    --card: 220 20% 13%; /* Darker Blue-Gray */
+    --card-foreground: 210 40% 96%; /* Light Gray */
+    --popover: 220 20% 11%; /* Slightly Darker Popover */
+    --popover-foreground: 210 40% 96%; /* Light Gray */
+    --primary: 200 85% 55%; /* Bright Cerulean Blue */
+    --primary-foreground: 200 85% 10%; /* Dark Cerulean */
+    --secondary: 210 15% 25%; /* Medium Dark Gray-Blue */
+    --secondary-foreground: 210 40% 90%; /* Lighter Gray */
+    --muted: 210 15% 25%; /* Medium Dark Gray-Blue */
+    --muted-foreground: 210 20% 60%; /* Medium Gray */
+    --accent: 170 70% 45%; /* Teal/Turquoise */
+    --accent-foreground: 170 70% 95%; /* Very Light Teal */
+    --destructive: 0 70% 50%; /* Standard Red */
+    --destructive-foreground: 0 0% 98%; /* Light */
+    --border: 210 15% 30%; /* Dark Gray-Blue Border */
+    --input: 210 15% 20%; /* Darker Input Background */
+    --ring: 200 85% 50%; /* Slightly darker Cerulean for focus rings */
+    --chart-1: 200 70% 50%;
+    --chart-2: 170 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    /* Sidebar uses same theme */
+    --sidebar-background: 220 20% 9%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 200 85% 55%;
+    --sidebar-primary-foreground: 200 85% 10%;
+    --sidebar-accent: 210 15% 25%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 210 15% 30%;
+    --sidebar-ring: 200 85% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
